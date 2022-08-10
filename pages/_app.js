@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import Head from 'next/head'
 import { SessionProvider } from 'next-auth/react';
-import { Navigation } from '../components';
+import { Navigation, Footer } from '../components';
 
 
 // Pet Profile Page
@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
         {/* <AuthWrapper> */}
         <Navigation />
         <Component {...pageProps} />
-        {/* <Footer /> */}
+        <Footer />
         {/* </AuthWrapper> */}
       </SessionProvider>
     </>
