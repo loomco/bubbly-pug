@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 // import { MdLocationPin } from 'react-icons/md'
 // import Gallery from '../Components/Gallery';
 // import HeroSection from '../Components/Hero';
