@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontSize: {
         heroh1: 'clamp(2rem, 9vw, 6rem)',
+        h1: 'clamp(2.2rem, 8vw, 4rem)',
         h2: 'clamp(2.2rem, 8vw, 4rem)'
 
       },
