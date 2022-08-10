@@ -1,16 +1,15 @@
 import Head from 'next/head'
 import Image from 'next/image'
 // import { MdLocationPin } from 'react-icons/md'
-// import BehindTheScenes from '../Components/BehindTheScenes';
 // import Gallery from '../Components/Gallery';
 // import HeroSection from '../Components/Hero';
 // import Layout from '../Components/Layout';
 // import MeetandGreetForm from '../Components/MeetandGreet';
 // import Review from '../Components/Review';
 import dynamic from 'next/dynamic'
+import { BehindTheScenes } from '../components'
 
-
-const HeroSection = dynamic(() => import('../components/hero'), {
+const HeroSection = dynamic(() => import('../components/Hero'), {
   ssr: false
 })
 
@@ -23,7 +22,7 @@ export default function Home() {
       </Head>
       <HeroSection />
       <main>
-        {/* <BehindTheScenes /> */}
+        <BehindTheScenes />
         {/* <Review content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, quod!" /> */}
         {/* <Gallery /> */}
         {/* <MeetandGreetForm /> */}
