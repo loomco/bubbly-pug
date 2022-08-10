@@ -1,7 +1,5 @@
-import React from 'react'
 import { FaPaw } from 'react-icons/fa'
 import Link from 'next/link'
-import Image from 'next/future/image'
 
 
 const HeroSection = () => {
