@@ -1,10 +1,10 @@
 import '../styles/globals.css'
 import Head from 'next/head'
 import { SessionProvider } from 'next-auth/react';
+import { Navigation } from '../components';
 
 
 // Pet Profile Page
-import Navigation from '../components';
 // import Footer from '../Components/Footer';
 // import AuthWrapper from '../Components/AuthWrapper';
 
