@@ -20,3 +20,15 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.mobile-menu-fixed {
+  height: calc(100vh - 90px);
+}
+
+.review__text::before {
+  content: open-quote;
+}
+
+.review__text::after {
+  content: close-quote;
+}

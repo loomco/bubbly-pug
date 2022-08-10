@@ -38,7 +38,7 @@ const Navigation = () => {
     const handleCloseAccountMenu = () => setToggleAccountMenu(false);
 
     return (
-        <div className=" z-10 bg-[#001B26]  ">
+        <div className="z-30 bg-[#001B26] fixed top-0 left-0 right-0">
             <nav id="navigation" className='flex justify-between py-5 px-8 lg:px-20 w-full max-w-[1800px] mx-auto relative'  >
 
                 <Link href="/">
@@ -57,7 +57,7 @@ const Navigation = () => {
                     }
                 </button>
 
-                <ul id="navigationLinks" className={`text-lg z-20 text-white bg-[#001B26] ${toggleMobileMenu ? "grid justify-items-center items-center absolute top-[90px] left-0 right-0 h-screen gap-y-12 overflow-y-scroll pt-5 pb-10" : "hidden  lg:flex items-center gap-x-5 "}`}>
+                <ul id="navigationLinks" className={`text-lg z-20 text-white bg-[#001B26] ${toggleMobileMenu ? "flex flex-col items-center gap-y-20 absolute top-[90px] mobile-menu-fixed left-0 right-0 h-80  overflow-y-scroll pt-5 pb-10" : "hidden  lg:flex items-center gap-x-5 "}`}>
                     <li><Link href="/"><a className={`${router.pathname === "/" ? "" : ''}`}>Home</a></Link></li>
 
                     <li><Link href="/about"><a className={`${router.pathname === "/about" ? "" : ''}`}>About</a></Link></li>
@@ -69,7 +69,6 @@ const Navigation = () => {
                     <li><Link href="/contact"><a className={`${router.pathname === "/contact" ? "" : ''}`}>Contact</a></Link></li>
 
                     {
-
                         session && (
                             <li style={{ color: "#fff", textAlign: "center", cursor: "pointer", position: "relative" }} onClick={() => setToggleAccountMenu(prev => !prev)} >Account
                                 <ul >
@@ -82,6 +81,7 @@ const Navigation = () => {
                             </li>
                         )
                     }
+
                     {status === 'unauthenticated' && (
                         <button type="button"
                             onClick={handleSignin}>

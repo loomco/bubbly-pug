@@ -1,12 +1,10 @@
 import Head from 'next/head'
 // import { MdLocationPin } from 'react-icons/md'
-// import Gallery from '../Components/Gallery';
 // import HeroSection from '../Components/Hero';
 // import Layout from '../Components/Layout';
 // import MeetandGreetForm from '../Components/MeetandGreet';
-// import Review from '../Components/Review';
 import dynamic from 'next/dynamic'
-import { BehindTheScenes } from '../components'
+import { BehindTheScenes, Gallery, Review } from '../components'
 
 const HeroSection = dynamic(() => import('../components/HeroSection'), {
   ssr: false
@@ -22,8 +20,8 @@ export default function Home() {
       <HeroSection />
       <main>
         <BehindTheScenes />
-        {/* <Review content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, quod!" /> */}
-        {/* <Gallery /> */}
+        <Review content="The Bubbly Pug has so many offerings for my babies and the staff is amazing. I cannot believe what we've been missing." />
+        <Gallery />
         {/* <MeetandGreetForm /> */}
       </main>
     </>
