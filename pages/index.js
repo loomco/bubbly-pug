@@ -8,9 +8,9 @@ import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import { BehindTheScenes } from '../components'
 
-// const HeroSection = dynamic(() => import('../components/Hero'), {
-//   ssr: false
-// })
+const HeroSection = dynamic(() => import('../components/HeroSection'), {
+  ssr: false
+})
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
         <title>The Bubbly Pug | Home</title>
         <meta type="description" content="" />
       </Head>
-      {/* <HeroSection /> */}
+      <HeroSection />
       <main>
         <BehindTheScenes />
         {/* <Review content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, quod!" /> */}
