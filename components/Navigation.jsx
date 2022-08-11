@@ -57,7 +57,7 @@ const Navigation = () => {
                     }
                 </button>
 
-                <ul id="navigationLinks" className={`text-lg z-20 text-white bg-[#001B26] ${toggleMobileMenu ? "flex flex-col items-center gap-y-20 absolute top-[90px] mobile-menu-fixed left-0 right-0 h-80  overflow-y-scroll pt-5 pb-10" : "hidden  lg:flex items-center gap-x-5 "}`}>
+                <ul id="navigationLinks" className={`text-lg z-20 text-white bg-[#001B26] ${toggleMobileMenu ? "flex flex-col items-center gap-y-20 absolute top-[90px] mobile-menu-fixed left-0 right-0 h-80  overflow-y-scroll pt-5 pb-10" : "hidden lg:flex items-center gap-x-5 "}`}>
                     <li><Link href="/"><a className={`${router.pathname === "/" ? "" : ''}`}>Home</a></Link></li>
 
                     <li><Link href="/about"><a className={`${router.pathname === "/about" ? "" : ''}`}>About</a></Link></li>
@@ -71,7 +71,7 @@ const Navigation = () => {
                     {
                         session && (
                             <li style={{ color: "#fff", textAlign: "center", cursor: "pointer", position: "relative" }} onClick={() => setToggleAccountMenu(prev => !prev)} >Account
-                                <ul >
+                                <ul className={`${toggleAccountMenu ? "absolute top-11 -left-16 w-48 bg-[#172d35] flex flex-col gap-y-5 z-30 py-5" : "hidden"}`}>
 
                                     <li><Link href="/account/dashboard" onClick={handleCloseAccountMenu}><a className={`${router.pathname === "/account" ? "" : ''}`}>Dashboard</a></Link></li>
                                     <li><Link href="/account/pet-profile" onClick={handleCloseAccountMenu} ><a className={`${router.pathname === "/account" ? "" : ''}`}>Pet Profile</a></Link></li>
