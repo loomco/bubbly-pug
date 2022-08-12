@@ -43,7 +43,7 @@ const Navigation = () => {
 
                 <Link href="/">
                     <a >
-                        <Image src='/images/logo/logo.png' alt="The Bubbly Pug" height={60} width={52.44} />
+                        <Image src='/images/logo/logo-50w.png' alt="The Bubbly Pug" height={57} width={50} />
                     </a>
                 </Link>
 

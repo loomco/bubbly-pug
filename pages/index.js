@@ -8,6 +8,8 @@ const HeroSection = dynamic(() => import('../components/HeroSection'), {
 })
 
 export default function Home() {
+  const width = 60;
+  const styles = `max-w-5xl`
   return (
     <>
       <Head>
@@ -19,6 +21,7 @@ export default function Home() {
         <BehindTheScenes />
         <Review content="The Bubbly Pug has so many offerings for my babies and the staff is amazing. I cannot believe what we've been missing." />
         <Gallery />
+        <Review styles={styles} content="I will NEVER use another grooming service. My pups deserve the best and that's what they'll get." />
         <MeetAndGreetForm />
       </main>
     </>

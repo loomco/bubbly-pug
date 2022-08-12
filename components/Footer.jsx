@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Image from 'next/image'
 import { toast, ToastContainer } from 'react-toastify'
 import { BsFacebook, BsInstagram, BsTwitter } from 'react-icons/bs';
 import { useRouter } from 'next/router';
@@ -52,7 +51,7 @@ const Footer = () => {
                                 <form>
                                     <fieldset className="flex flex-col border-none gap-y-5 lg:gap-2">
                                         <label className="text-2xl text-center tracking-wide" htmlFor='newsletter'>Sign Up for our Newsletter</label>
-                                        <input className="md:text-base lg:text-lg p-2 w-full rounded-md border-none" id="newsletter" type="email" placeholder='Stay up to date!' value={email} onChange={(e) => setEmail(e.target.value)} />
+                                        <input className="md:text-base lg:text-lg p-2 w-full rounded-md border-none text-center" id="newsletter" type="email" placeholder='Stay up to date!' value={email} onChange={(e) => setEmail(e.target.value)} />
                                     </fieldset>
                                     <button
                                         className="mt-2 p-2 w-full tracking-wide border border-slate-2 text-white rounded-md bg-transparent text-base"
