@@ -68,7 +68,7 @@ const TextInputs = () => {
         <>
             {
                 FormValues.map((item) => (
-                    <fieldset className="flex flex-col gap-y-2 border-none w-full">
+                    <fieldset key={item.id} className="flex flex-col gap-y-2 border-none w-full">
                         <label htmlFor={item.htmlFor} className="text-lg">{item.label}</label>
                         <input id={item.input.id} className="border p-1 rounded-lg" type={item.input.type} />
                     </fieldset>
