@@ -56,7 +56,7 @@ const PetProfileForm = () => {
                 </fieldset>
 
                 <fieldset className="md:col-span-2 flex flex-col gap-y-2 border-none w-full">
-                    <label htmlFor="additionalInfo" className="">Additional Info</label>
+                    <label htmlFor="additionalInfo" >Additional Info</label>
                     <textarea id="additionalInfo" className="border rounded-lg" rows={5} />
                 </fieldset>
 
