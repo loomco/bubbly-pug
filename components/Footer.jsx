@@ -80,7 +80,7 @@ const Footer = () => {
                         </div>
                     )
                 }
-                <span className="text-xs text-center">Copyright &copy; {new Date().getFullYear()} LoomCo & ALStudio</span>
+                <span className={` text-center ${userAccount ? "lg:translate-x-[125px] text-sm" : "text-xs"}`}>Copyright &copy; {new Date().getFullYear()} LoomCo & ALStudio</span>
                 <ToastContainer
                     position="bottom-center"
                     autoClose={3000}
