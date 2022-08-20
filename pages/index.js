@@ -2,7 +2,6 @@ import Head from 'next/head'
 // import { MdLocationPin } from 'react-icons/md'
 import dynamic from 'next/dynamic'
 import { BehindTheScenes, Gallery, MeetAndGreetForm, Review } from '../components'
-import Marquee from "react-fast-marquee"
 
 const HeroSection = dynamic(() => import('../components/HeroSection'), {
   ssr: false
@@ -19,9 +18,6 @@ export default function Home() {
       </Head>
 
       <HeroSection />
-      <Marquee>
-        Hello
-      </Marquee>
       <div className="py-10">
         <h2 className="text-5xl font-bold text-center">Who can relate?</h2>
         <p className="leading-loose max-w-[800px] mx-auto text-center py-3">
