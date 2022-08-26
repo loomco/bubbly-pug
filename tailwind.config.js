@@ -14,8 +14,14 @@ module.exports = {
       },
       boxShadow: {
         lg: '2px 2px 10px -2px #ddd'
-      }
+      },
+      fontFamily: {
+        'nunito': 'Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
+        'quicksand': 'Quicksand, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
+        'delius': 'Delius'
+      },
     },
   },
+  darkMode: "class",
   plugins: [],
 }

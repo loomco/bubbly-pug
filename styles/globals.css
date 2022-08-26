@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,7 +11,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Delius', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   scroll-behavior: smooth;
 }
@@ -32,4 +35,81 @@ a {
 
 .review__text::after {
   content: close-quote;
+}
+
+.btn-gradient {
+  background-image: linear-gradient(to bottom right, #D2EBFC 25%, #FABCB457 90%);
+  background-size: 175%;
+  transition: all 1s ease;
+  background-position: left;
+  border-radius: 16px;
+}
+
+.btn-gradient:hover,
+.btn-gradient:focus {
+  background-size: 120%;
+  background-position: left;
+}
+
+/* Swiper */
+
+.swiper {
+  width: 100%;
+  max-width: 1400px;
+}
+
+@media screen and (min-width: 768px) {
+  .swiper {
+    width: 60%;
+    height: 100%;
+  }
+}
+
+.swiper-slide {
+  background-color: var(--transparent-background) !important;
+}
+
+html.dark .swiper-pagination-bullet {
+  background: var(--white-text);
+  opacity: 0.2;
+}
+
+html.dark .swiper-pagination-bullet-active {
+  background: white;
+  opacity: 1;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--white-text) !important;
+}
+
+
+.swiper-pagination {
+  position: unset !important;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
 }
